@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActvitySignIn_User"
+    android:background="@drawable/background2"
+    >
+
+
+    <ImageView
+        android:id="@+id/SN_logo"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="8dp"
+        app:srcCompat="@drawable/trasnparentsmall"
+
+
+        />
+
+    <EditText
+        android:paddingLeft="20dp"
+        android:id="@+id/SN_Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/SN_logo"
+        android:hint="Name"
+        android:textSize="20dp"
+        android:textColor="@color/deepRed"
+        android:textColorHint="@color/deepRed"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:background="@drawable/button_black"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:paddingLeft="20dp"
+        android:id="@+id/SN_Email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/SN_Name"
+        android:hint="Email Address"
+        android:textSize="20dp"
+        android:textColor="@color/deepRed"
+        android:textColorHint="@color/deepRed"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:background="@drawable/button_black"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <EditText
+        android:id="@+id/SN_Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/SN_Email"
+        android:hint="Password"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:textColor="@color/deepRed"
+        android:textColorHint="@color/deepRed"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:background="@drawable/button_black"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp" />
+
+
+    <EditText
+        android:id="@+id/Confirm_Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/SN_Password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_black"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/deepRed"
+        android:textColorHint="@color/deepRed"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <com.santalu.maskedittext.MaskEditText
+        android:paddingLeft="20dp"
+        android:id="@+id/SN_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Confirm_Password"
+        android:hint="Phone No."
+        android:textSize="20dp"
+        android:textColor="@color/deepRed"
+        android:textColorHint="@color/deepRed"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:background="@drawable/button_black"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:inputType="phone"
+        app:met_mask="+(91)##########"
+
+
+        />
+
+
+
+
+    <Button
+        android:id="@+id/SN_Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whitetransparent"
+        android:layout_below="@+id/SN_Phone"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#D21D26"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/SN_Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whitetransparent"
+        android:layout_below="@+id/SN_Confirm"
+        android:layout_marginTop="20dp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="#D21D26"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/SN_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whitetransparent"
+        android:layout_below="@+id/SN_Cancel"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/deepRed"
+        android:textSize="20dp"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

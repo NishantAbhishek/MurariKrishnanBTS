@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/MN_Name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/redtransparent"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/MN_Name"
+        android:id="@+id/SpinnerLayouts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/MN_TextLcStart"
+            android:text="Select Starting Location"
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/MN_Location_Place_Start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MN_TextLcStart"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="150dp"
+            android:paddingLeft="20dp"
+            android:textAlignment="center"
+            ></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+        <TextView
+            android:id="@+id/MN_Starting_location_id"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@+id/MN_TextLcStart"
+            android:layout_marginLeft="-127dp"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/MN_Location_Place_Start" />
+
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/MN_TextLcEnd"
+            android:text="Select Destination Location"
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_below="@+id/MN_Location_Place_Start"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+
+            />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/MN_Location_Place_Destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MN_TextLcEnd"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="150dp"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="5dp"
+            ></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+        <TextView
+            android:id="@+id/MN_destination_id"
+            android:layout_marginTop="19dp"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@+id/MN_TextLcEnd"
+            android:layout_marginLeft="-127dp"
+            android:layout_toRightOf="@+id/MN_TextLcEnd" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/MN_Select_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SpinnerLayouts"
+        android:layout_marginTop="30dp"
+        android:text="Select Date"
+        android:textColor="#0C0101"
+        android:textSize="20dp"
+        android:background="@drawable/button_black"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAllCaps="false"
+        />
+
+
+    <Button
+        android:id="@+id/MN_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SpinnerLayouts"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/MN_Select_date"
+        android:background="@drawable/button_black"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/MN_Signout"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/redtransparent"
+        android:text="SignOut"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/MN_Ticekets_booked"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/redtransparent"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="190dp"
+        android:text="Tickets"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/MNblload"
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginBottom="70dp" />
+
+</RelativeLayout>
+
+
+
+

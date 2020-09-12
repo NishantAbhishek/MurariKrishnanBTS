@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".ActivityLogin_User">
+
+
+    <ImageView
+        android:id="@+id/LG_logo"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="8dp"
+        app:srcCompat="@drawable/trasnparentsmall"
+
+
+        />
+
+    <EditText
+        android:paddingLeft="22dp"
+        android:id="@+id/LG_Email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/LG_logo"
+        android:hint="Email Address"
+        android:textSize="20dp"
+        android:textColor="#201377"
+        android:textColorHint="#201377"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:background="@drawable/button_black"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <EditText
+        android:id="@+id/LG_Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/LG_Email"
+        android:hint="Password"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:textColorHint="#201377"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:background="@drawable/button_black"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#201377"
+
+        />
+
+
+
+
+    <Button
+        android:id="@+id/LG_Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whitetransparent"
+        android:layout_below="@+id/LG_Password"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#D21D26"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <Button
+        android:id="@+id/LG_Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whitetransparent"
+        android:layout_below="@+id/LG_Confirm"
+        android:layout_marginTop="20dp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="#D21D26"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

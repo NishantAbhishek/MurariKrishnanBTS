@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="169dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bus_loading">
+
+
+        <android.support.v7.widget.CardView
+
+            android:id="@+id/loadbusview"
+            android:layout_width="341dp"
+            android:layout_height="132dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            app:contentPadding="5dp">
+
+            <ImageView
+                android:id="@+id/Logo"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="75dp"
+                android:src="@drawable/logo_wjite"></ImageView>
+
+            <TextView
+                android:id="@+id/blDate"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Date" />
+
+
+            <TextView
+                android:id="@+id/blLocationStart"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="LocationStart" />
+
+
+            <TextView
+                android:id="@+id/blLocationArrival"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="30dp"
+                android:text="LocationArrival" />
+
+
+            <TextView
+                android:id="@+id/blLocationEndTime"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="60dp"
+                android:text="LocationEndTime" />
+
+            <TextView
+                android:id="@+id/blLocatioionStartTime"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp" />
+
+            <TextView
+                android:id="@+id/blSeatType"
+                android:layout_width="181dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="90dp"
+                android:text="SeatType" />
+
+            <TextView
+                android:id="@+id/blBusId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:text="BusId" />
+
+            <TextView
+                android:id="@+id/blticket_price"
+                android:layout_width="82dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="40dp"
+                android:text="130 Rs"
+                android:textAlignment="center"
+                android:textColor="#E52027"
+                android:textSize="25dp"></TextView>
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookTicket">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberanddate"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignLeft="@+id/BT_Busnumber"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="296dp"
+                android:layout_marginTop="33dp"
+                android:src="@drawable/logo_wjite"></ImageView>
+
+            <TextView
+                android:id="@+id/BT_Busnumber"
+                android:layout_width="274dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="BusNumber"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.839" />
+
+            <TextView
+                android:id="@+id/BK_Date"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BT_Busnumber"
+                android:layout_marginTop="5dp"
+                android:text="Date"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.839" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/departure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numberanddate">
+            <TextView
+                android:id="@+id/BT_DepartureAddress"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Departure Address"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.839" />
+
+            <TextView
+                android:id="@+id/BT_DeparturePin"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/BT_DepartureAddress"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="-234dp"
+                android:text="Departure Pin"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.839" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/arrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/departure">
+            <TextView
+                android:id="@+id/BT_ArrivalAddress"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Arrival Address"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.839" />
+
+            <TextView
+                android:id="@+id/BT_ArrivalPin"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/BT_ArrivalAddress"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="-234dp"
+                android:text="Arrival Pin"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.839" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/arrival">
+            <TextView
+                android:id="@+id/BT_DepartureTime"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Departure Time"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.839" />
+
+            <TextView
+                android:id="@+id/BT_ArrivalTime"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/BT_DepartureTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="-234dp"
+                android:text="Arrival Time"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.839" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/BT_SeatNoavailable"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time"
+            android:layout_marginTop="20dp"
+            android:text="Seat Available"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/BT_TypeSeatavailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BT_SeatNoavailable"
+            android:layout_marginTop="20dp"
+            android:text="Seat type"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20dp"></TextView>
+
+
+        <EditText
+            android:id="@+id/BT_travellername"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BT_TypeSeatavailable"
+            android:layout_marginTop="4dp"
+            android:hint="Traveller"></EditText>
+
+
+        <Button
+            android:id="@+id/BT_adTravellerbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BT_TypeSeatavailable"
+            android:layout_alignRight="@+id/BT_travellername"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="-115dp"
+            android:background="@drawable/button_black"
+            android:textColor="#201377"
+            android:text="Add">
+        </Button>
+
+        <ListView
+            android:layout_below="@+id/BT_adTravellerbtn"
+            android:id="@+id/MN_Nameslistv"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+
+
+        <Button
+            android:id="@+id/BK_Confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/BT_TypeSeatavailable"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_black"
+            android:hint="Confirm Booking"
+            android:paddingLeft="20dp"
+            android:textAllCaps="false"
+            android:textColor="#201377"
+            android:textColorHint="#201377"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
